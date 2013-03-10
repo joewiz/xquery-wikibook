@@ -1,0 +1,35 @@
+.code { 
+    font: 14px/20px "Ubuntu Mono", Menlo, Consolas, "Courier New", Courier, monospace;
+    background: #444444 url($shared/resources/images/noise.png);
+    padding: 8.5px;
+    width: 100%;
+    margin: 18px 0 18px;
+}
+
+.code a {
+    padding: 4px;
+    border: 1px solid #C7C7C7;
+}
+
+.source .toolbar, .example-output {
+    padding-left: 18px;
+    border-left: 4px solid #C7C7C7;
+}
+
+.output {
+    margin: 8px 0;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.output .code {
+    max-height: 200px;
+    overflow: auto;
+    background: #ffffff;
+    padding: 0 8px;
+}
+
+.load-indicator {
+    margin-left: 30px;
+    display: none;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
+    <h1>Wikibook: Hello World</h1>
+    <section>
+        <h3>Motivation</h3>
+        <p>You want to run a small program that tests to see if your XQuery execution environment is
+            working.</p>
+    </section>
+    <section>
+        <h3>XML Output</h3>
+        <pre class="demo:display-source-from-db?path-to-file=/db/apps/xquery-wikibook/examples/HelloWorld/helloWorld.xq&amp;lang=xquery"/>
+        <h4>Expected Output</h4>
+        <pre class="demo:display-xml-document?path-to-file=/db/apps/xquery-wikibook/examples/HelloWorld/helloWorld-results.xml"/>
+        <h4>Discussion</h4>
+        <p>The program creates a temporary variable called $message and assigns it a string value.
+            The output is an XML element containing a message element which contains the value of
+            the variable.</p>
+        <h4>Suggestions</h4>
+        <p>Try omitting the curly braces from inside of the result message element. What do you get?
+                <span class="demo:run-source-from-db?path-to-file=/db/apps/xquery-wikibook/examples/HelloWorld/helloWorld_1.xq"/>
+        </p>
+        <p>What happens if you omit the results wrappers? <span class="demo:run-source-from-db?path-to-file=/db/apps/xquery-wikibook/examples/HelloWorld/helloWorld_2.xq"/>
+        </p>
+        <h4>Plain Text</h4>
+        <p>You can get XQuery to return plain text using serialization options which define the
+            serialization and the output media-type.</p>
+        <p>For example to output the message as text, specify the serialization as text and the
+            media-type as text/plain.</p>
+        <pre class="demo:display-source-from-db?path-to-file=/db/apps/xquery-wikibook/examples/HelloWorld/helloWorld_03.xq&amp;lang=xquery"/>
+        <h4>Expected Output</h4>
+        <p>Depending on your browser set-up, this will launch a viewer for text documents and
+            display</p>
+        <pre class="demo:display-source?lang=text">Hello World!</pre>
+    </section>
+</div>

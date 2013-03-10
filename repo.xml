@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>XQuery Wikibook</description>
+    <author>Joe Wicentowski</author>
+    <website/>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>xquery-wikibook</target>
+    <prepare>pre-install.xql</prepare>
+    <permissions user="admin" password="" group="dba" mode="0775"/>
+    <deployed>2013-03-10T04:48:23.467-04:00</deployed>
+</meta>

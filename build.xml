@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xdb="http://exist-db.org/ant" default="xar" name="XQuery Wikibook">
+    <property name="build.dir" value="build"/>
+    <property name="project.app" value="xquery-wikibook"/>
+    <property name="project.version" value="0.1"/>
+    <target name="xar">
+        <mkdir dir="${build.dir}"/>
+        <zip basedir="." destfile="${build.dir}/${project.app}-${project.version}.xar" excludes="${build.dir}/*"/>
+    </target>
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+</project>
